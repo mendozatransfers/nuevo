@@ -58,6 +58,7 @@ main {
         color: white;
         font-size: 1.3rem;
         font-family: "Montserrat", sans-serif;
+        font-weight: 500;
     }
 
     .boton:hover {
@@ -80,7 +81,7 @@ main {
 
 .garantias {
     width: 100%;
-    margin-top: 190px;
+    margin-top: 100px;
     padding: 4vw;
     margin-bottom: 50px;
    
@@ -225,7 +226,7 @@ main {
      background: #232323;
 
     a{
-        color:darkgoldenrod;
+        color:#d09809;
     }
 
 }
@@ -270,10 +271,11 @@ main {
         a {
             padding: 1vw 4vw;
             background: #232323;
-            color: darkgoldenrod;
+            color: #e1a50c;
             text-align: center;
             border-radius: 10px;
             font-size: 1.1rem;
+            font-weight: 400;
         }
     
     }
@@ -379,6 +381,7 @@ main {
 form {
     width: 45%;
     padding-left: 5%;
+  
     
 }
 
@@ -390,7 +393,7 @@ form input {
     background: transparent;
     border: 1px solid #b88914;
     padding: 3px;
-    
+    font-size: 1.2rem;
 
 }
 
@@ -400,6 +403,7 @@ form textarea {
     margin: 10px 0 10px -10vw;
     border: 2px solid #b88914;
     padding: 0;
+    font-size: 1.2rem;
     
 }
 
@@ -407,10 +411,10 @@ form button {
     display: block;
     align-items: center;
     width: 70%;
-    height: 40px;
+    height: 7vh;
     border-radius: 10px;
     background: #232323f0;
-    color: #bd8d13;
+    color: #e3a70f;
     margin: 10px 0;
     border: none;
     font-size: 1.1rem;
@@ -426,13 +430,30 @@ form button {
     color: whitesmoke;
     z-index: 10;
     font-size: 60px;
-    background: #25d366;
+    background: #21d061;
     border-radius: 100%;
     padding: 5px;
     }
 
+    span {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        gap: 2vw;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        color: #232323;
+        padding: 1vw;
+
+    }
+
     i:hover {
         transform: scale(1.1);
+
+         span {
+            display: flex;
+         }
     }
 
   }
