@@ -566,7 +566,7 @@ footer {
     height: 85vh;
     background-image: url(./imagenes/hero-movil.webp);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
    
     img {
         display: none;
@@ -912,6 +912,7 @@ footer {
     }    
     
 }
+
 
 
 
