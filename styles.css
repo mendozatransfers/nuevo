@@ -1,0 +1,957 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+  
+}
+
+body {
+   width:100%;
+   height: auto;
+   overflow-x: hidden;
+   
+  
+}
+
+main {
+    width: 100%;
+    height: auto;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 300; 
+    background: #f0efef; 
+    overflow-x: hidden;
+}
+
+/*banner*/
+
+.hero {
+    width: 100%;
+    height: 100svh;
+    position: relative;
+    margin-bottom: 20px;
+
+    img {
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        display: block; /* evita espacios raros */
+        object-fit: cover;
+    }
+
+    .boton {
+        position: absolute;
+        right: 11vw;
+        top: 80vh;
+        background: #bb862b;
+        z-index: 10;
+        width: 19vw;
+        height: 8vh;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 2px 2px 5px 2px #45454587;
+    }
+
+    a, i {
+        color: white;
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .boton:hover {
+       background: #8b631d; 
+    }
+
+   
+    
+}
+
+.titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #292828;
+    font-weight: 500;
+}
+
+/*seccion de garantias*/
+
+.garantias {
+    width: 100%;
+    margin-top: 190px;
+    padding: 4vw;
+    margin-bottom: 50px;
+   
+
+    ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4vw;
+    font-family: "Bai Jamjuree", sans-serif;
+
+
+    i {
+        font-size: 3vw;
+        color:darkgoldenrod;
+      
+    }
+
+    }
+
+ 
+ .lista ul li {
+    margin-bottom: 25px;
+    align-items: center;
+    line-height: 1.5;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 5px 3px #c5c4c45f;
+    border-radius: 10px;
+    width: 45%;
+    height: 14vw;
+    padding: 3vw;
+     background: #fbfbfbfe;
+
+    h3 {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+
+    }
+
+ 
+}
+
+/*transfers populares*/
+
+.populares {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+    align-items: center;
+    gap: 1.5vw;
+    margin: 0 4vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    scrollbar-width: 0;
+   
+}   
+
+
+
+.populares .cards {
+    flex: 1 0 auto;
+    width: 22vw;
+    height: auto;
+    border: 1px solid #c7c5c5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #80808087;
+    background: #fbfbfbfe;
+    text-align: left;
+   
+
+   
+
+    img {
+        width: 100%;
+        height: 20vw;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+
+    }
+
+    h4 {
+        text-align: left;
+        padding-left: 2vw;
+        margin-top: 1.5vw;
+        font-weight: 500;
+        color: #232323;
+        font-size: 1.2rem;
+    }
+
+    p {
+        padding-left: 2vw;
+    }
+    
+    
+}
+
+.populares::-webkit-scrollbar {
+    margin-top: 0;
+    width: 10%;
+    height: 5px;
+ }
+
+ .populares::-webkit-scrollbar-thumb {
+    background-color: #d5d3d3; /* Color del pulgar */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+
+.populares .rafael {
+    margin-right: 25px;
+}
+
+
+.populares button {
+    text-align: center;
+    width: 12vw;
+    height: 5vh;
+    border-radius: 6px;
+    border: 2px solid #232323;
+    margin: 2vw 5vw 3vw 5vw;
+    cursor: pointer;
+    background: transparent;
+
+           
+    a{
+        color:#232323;
+        font-size: 1rem;
+    }
+}
+
+.populares button:hover {
+     background: #232323;
+
+    a{
+        color:darkgoldenrod;
+    }
+
+}
+
+.populares::-webkit-scrollbar {
+    margin-top: 0;
+    width: 0;
+    height: 0;
+ }
+
+/*seccion de reseñas */
+
+.reseñas {
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    background: #e2e1e1;
+    padding: 4vw;
+    margin-bottom: 9vw;
+
+    h3 {
+        margin-top: 60px;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 3vw 0;
+
+        
+    }
+
+    .titulo-encabezado {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        text-wrap: nowrap;
+        gap: 18vw;
+    
+
+        a {
+            padding: 1vw 4vw;
+            background: #232323;
+            color: darkgoldenrod;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1.1rem;
+        }
+    
+    }
+
+    .boton-movil {
+        display: none;
+    }
+
+}
+
+
+.reseñas ul li {
+    width: 30%;
+    height: 24vw;
+    border: 1px solid #c7c5c5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #80808087;
+    background: #f9f7f7fe;
+    padding: 1.5vw;
+    position: relative;
+
+
+   
+    .perfil {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .estrellas {
+    position: absolute;  
+    width: 9vw;
+    height: 2vw;
+    margin-left: 4.5vw;
+    margin-top: -30px;
+   }
+
+   p {
+    margin-top: 15px;
+    text-align: left;
+   }
+
+}   
+
+  
+.reseñas .encabezado {
+   
+    display: flex;
+    gap: 10px;
+   
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 2vw;
+        height: 2vw;
+    }
+
+          
+}
+
+/*seccion de contacto */
+
+.formulario {
+    width: 85%;
+    height: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c7c5c5;
+    margin: 3vw 7vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 3px #23232321;
+    background: #f9f7f7f2;
+
+}
+
+.personalizar {
+    width: 50%;
+    height: 100%;
+  
+  
+    i{
+        font-size: 20px;
+        color:#b88914
+        
+    }
+
+    img {
+        width: 100%;
+        height: 435px;
+        border-radius: 10px 0 0 10px;
+        padding: 0;
+        
+               
+    }
+
+   
+}
+
+
+
+form {
+    width: 45%;
+    padding-left: 5%;
+    
+}
+
+form input {
+    display: block;
+    margin: 13px 0;
+    width: 70%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #b88914;
+    padding: 3px;
+    
+
+}
+
+form textarea {
+    width: 70%;
+    background: transparent;
+    margin: 10px 0 10px -10vw;
+    border: 2px solid #b88914;
+    padding: 0;
+    
+}
+
+form button {
+    display: block;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    background: #232323f0;
+    color: #bd8d13;
+    margin: 10px 0;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+  } 
+
+  #whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 2vw;
+
+    i{
+    color: whitesmoke;
+    z-index: 10;
+    font-size: 60px;
+    background: #25d366;
+    border-radius: 100%;
+    padding: 5px;
+    }
+
+    i:hover {
+        transform: scale(1.1);
+    }
+
+  }
+
+  /*galeria*/
+
+  .titulo-galeria {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #292828;
+    font-weight: 500;
+  }
+
+  .galeria {
+  width: 100%;
+  height: 80vh;
+  margin-top: 100px;
+  padding-top: 60px;
+  overflow: hidden;
+  position: relative;
+ 
+  padding: 2rem 0;
+}
+
+
+
+.galeria ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 30px;
+  animation: scroll 15s linear infinite;
+  width: max-content;
+}
+
+.galeria li {
+  flex: 0 0 auto;
+}
+
+.galeria img {
+  height: 300px;
+  width: 270px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.1s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-130%);
+  }
+}
+
+
+
+/*footer*/
+
+
+footer {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    color: whitesmoke;
+    background: #232323;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    padding-top: 10px;
+
+}
+
+.sociales img {
+    width: 30px;
+    height: 30px;
+    margin: 15px 10px;
+    border-radius: 5px;
+}
+
+.sociales img:hover {
+    transform: scale(1.3);
+}
+
+.sociales h3 {
+    font-family: "Monserrat", sans-serif;
+    margin-top: 37px;
+}
+
+.creditos a {
+    color: whitesmoke;
+}
+
+.creditos a:hover {
+    color: darkgoldenrod;
+    font-size: 1.1rem;
+}
+
+.creditos {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 0;
+
+    h3 {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+  /*responsivo*/
+
+@media(max-width: 500px){
+
+    body {
+       width:100%;
+       height: auto;
+       overflow-x: hidden;
+      
+    }
+
+    main {
+       width:100%;
+       height: auto;
+       overflow-x: hidden;
+    }
+
+     
+    .hero {
+    height: 85vh;
+    background-image: url(./imagenes/hero-movil.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    img {
+        display: none;
+    }
+
+    .boton {
+        position: absolute;
+        left: 17vw;
+        top: 36%;
+        background: #bb862b;
+        z-index: 10;
+        width: 70vw;
+        height: 6vh;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 2px 2px 5px 2px #45454587;
+    }
+
+    a, i {
+        color: white;
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+    }
+
+  }  
+
+
+   .garantias {
+    width: 100%;
+    margin-top: 0;
+    padding: 0 6vw;
+    margin-bottom: 75px;
+   
+
+    ul {
+
+    display: block;
+
+
+    i {
+        font-size: 7vw;
+        color:darkgoldenrod;
+      
+    }
+
+    }
+
+ 
+ .lista ul li {
+    margin-bottom: 25px;
+    align-items: center;
+    line-height: 1.5;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 5px 3px #c5c4c45f;
+    border-radius: 10px;
+    width: 100%;
+    height: 45vw;
+    padding: 4vw;
+    background: #fbfbfbfe;
+
+    h3 {
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+
+    }
+
+  }  
+  
+   .titulo {
+    font-size: 1.5rem;
+    padding: 0 4vw;
+    text-wrap: wrap;
+   }
+    
+    
+
+    .populares {
+        width: 100%;
+        height: 61vh;
+        margin-top: 0;
+        margin-left: 4vw;
+        scrollbar-width: 0px;
+        gap: 4vw;
+    }
+
+    .populares .cards {
+        width: 70vw;
+        height: auto;
+    
+        img {
+            width: 70vw;
+            height: 34vh;
+            object-fit: cover;
+        }
+
+        h4 {
+            padding: 1vw 3vw;
+            font-size: 1.2rem;
+        }
+
+        p {
+            padding: 1vw 3vw;
+            font-size: 1.2rem;
+        }
+    
+        button {
+            width: 31.5vw;
+            height: 5vh;
+            margin: 20px 65px;
+
+        }
+
+        a {
+            font-size: 1.3rem;
+        }
+
+    }
+
+   .reseñas {
+ 
+    width: 100%;
+    height: auto;
+    background: #e2e1e1;
+    padding: 4vw;
+    margin-bottom: 14vw;
+    position: relative;
+
+    h3 {
+        margin-top: 30px;
+       
+    }
+
+    ul {
+        width: 100%;
+        display: block;
+        padding: 4vw;
+
+          
+
+    }
+
+    .boton-movil {
+        display: block;
+        margin: 6vh 23vw 8vh 23vw;
+
+        a {
+            color:#232323;
+            text-wrap: nowrap;
+            padding: 3vw 5vw;
+            background: transparent;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #232323;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+    }
+
+    .titulo-encabezado {
+        display: block;
+        align-items: center;
+        justify-content: right;
+        text-wrap: nowrap;
+        gap: 18vw;
+
+        a {
+            display: none;
+        }
+    }
+
+   
+}
+
+
+.reseñas ul li {
+    width: 90vw;
+    height: auto;
+    border: 1px solid #c7c5c5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #80808087;
+    background: #f9f7f7fe;
+    padding: 4vw;
+    position: relative;
+    margin-bottom: 25px;
+
+       
+
+    .perfil {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .estrellas {
+    position: absolute;  
+    width: 20vw;
+    height: 5vw;
+    margin-left: 11vw;
+    margin-top: -5px;
+   }
+
+   p {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    text-align: left;
+   }
+
+    
+}   
+
+  
+.reseñas .encabezado {
+   
+    display: flex;
+    gap: 10px;
+   
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    img {
+        width: 7vw;
+        height: 7vw;
+    }
+
+          
+}
+
+
+    .formulario {
+        
+        display: block;
+        height: auto;
+        margin: 60px auto 10px auto;
+        width: 90%;
+       
+        
+    }
+
+    form {
+        width: 90%;
+        margin: 45px auto;
+        padding: 0;
+    }
+
+    form input, form button {
+        width: 100%;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+
+    form textarea {
+        margin-left: 0;
+        width: 100%;
+        height: 80px;
+        font-size: 1.2rem;
+    }
+
+    .personalizar {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            max-height: 30vh;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+        }
+
+       
+    }
+
+    .titulo-galeria {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: #292828;
+    font-weight: 500;
+  }
+
+
+  .galeria {
+  width: 100%;
+  height: 67vh;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  margin-top: 0;
+  
+  }
+
+
+    .galeria ul {
+    width: 100%;
+    display: flex;
+    gap: 4vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    stroke-width: 0px;
+    animation: none; 
+   
+    }
+
+    .galeria li {
+    flex: 0 0 auto;
+      
+    }
+
+    .galeria img {
+    height: 380px;
+    width: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease;
+    }
+
+   
+
+    
+    #whatsapp {
+        bottom: 50px;
+        right: 30px;
+        top: 500px;
+    }
+    
+
+    footer {
+        display: block;
+        height: 290px;
+        padding: 15px 40px;
+        margin-top: 0;
+
+        .sociales {
+            margin-bottom: 40px;
+
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        .creditos a {
+            color: whitesmoke;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 2px;
+        }
+    }    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
