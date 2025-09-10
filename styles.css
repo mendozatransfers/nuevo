@@ -423,12 +423,16 @@ form button {
     cursor: pointer;
   } 
 
-  #whatsapp {
+  .whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+    i{
     position: fixed;
     bottom: 50px;
-    right: 2vw;
-
-    i{
+    right: 2vw;    
     color: whitesmoke;
     z-index: 10;
     font-size: 60px;
@@ -438,25 +442,19 @@ form button {
     }
 
     span {
-        display: none;
-
-        align-items: center;
-        justify-content: center;
+        
         background: white;
-        gap: 2vw;
         border-radius: 25px;
         font-size: 1.2rem;
         color: #232323;
         padding: 1vw;
+         z-index: 10;
 
     }
 
     i:hover {
         transform: scale(1.1);
 
-         span {
-            display: flex;
-         }
     }
 
   }
