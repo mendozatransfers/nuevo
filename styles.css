@@ -426,7 +426,11 @@ form button {
   .whatsapp {
     position: fixed;
     bottom: 50px;
+<<<<<<< HEAD
     right: 2vw;     
+=======
+    right: 2vw;    
+>>>>>>> a4a3c7aed3a9fcb2ecea9b8b04484c38581e9520
    
     i{
     color: whitesmoke;
@@ -437,9 +441,12 @@ form button {
     padding: 5px;
     }
 
+<<<<<<< HEAD
    
+=======
+>>>>>>> a4a3c7aed3a9fcb2ecea9b8b04484c38581e9520
     i:hover {
-        transform: scale(1.1);
+    transform: scale(1.1);
 
     }
 
