@@ -145,12 +145,13 @@ main {
     align-items: center;
     gap: 1.5vw;
     margin: 0 4vw;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory; 
-    scrollbar-width: 5px;
+    scrollbar-width: 7px;
+
+
    
 }   
-
 
 
 .populares .cards {
@@ -162,6 +163,7 @@ main {
     box-shadow: 2px 2px 5px 2px #80808087;
     background: #fbfbfbfe;
     text-align: left;
+    margin-bottom: 10px;
    
 
    
@@ -193,7 +195,7 @@ main {
 .populares::-webkit-scrollbar {
     margin-top: 0;
     width: 10%;
-    height: 5px;
+    height: 8px;
  }
 
  .populares::-webkit-scrollbar-thumb {
