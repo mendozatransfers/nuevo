@@ -255,91 +255,12 @@ main {
         margin-top: 60px;
     }
 
-    ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin: 3vw 0;
-
         
-    }
 
-    .titulo-encabezado {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        text-wrap: nowrap;
-        gap: 18vw;
-    
-
-        a {
-            padding: 1vw 4vw;
-            background: #232323;
-            color: #e1a50c;
-            text-align: center;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            font-weight: 400;
-        }
-    
-    }
-
-    .boton-movil {
-        display: none;
-    }
 
 }
 
 
-.reseñas ul li {
-    width: 30%;
-    height: 24vw;
-    border: 1px solid #c7c5c5;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px 2px #80808087;
-    background: #f9f7f7fe;
-    padding: 1.5vw;
-    position: relative;
-
-
-   
-    .perfil {
-        width: 4vw;
-        height: 4vw;
-    }
-
-    .estrellas {
-    position: absolute;  
-    width: 9vw;
-    height: 2vw;
-    margin-left: 4.5vw;
-    margin-top: -30px;
-   }
-
-   p {
-    margin-top: 15px;
-    text-align: left;
-   }
-
-}   
-
-  
-.reseñas .encabezado {
-   
-    display: flex;
-    gap: 10px;
-   
-    h4 {
-        font-size: 1.2rem;
-    }
-
-    img {
-        width: 2vw;
-        height: 2vw;
-    }
-
-          
-}
 
 /*seccion de contacto */
 
@@ -570,7 +491,7 @@ footer {
 
   /*responsivo*/
 
-@media(max-width: 500px){
+@media(max-width: 640px){
 
     body {
        width:100%;
@@ -722,113 +643,55 @@ footer {
     width: 100%;
     height: auto;
     background: #e2e1e1;
-    padding: 4vw;
+    padding: 4vw 6vw;
     margin-bottom: 14vw;
     position: relative;
 
     h3 {
+        
         margin-top: 30px;
        
     }
 
-    ul {
-        width: 100%;
-        display: block;
-        padding: 4vw;
+     iframe {
+     width: 86%;
+     margin-bottom: 3vw;
+   
+     }
 
-          
+  
 
-    }
-
-    .boton-movil {
-        display: block;
-        margin: 6vh 23vw 8vh 23vw;
-
+    .titulo-encabezado {
+         
+        margin: 0 auto;
+        padding-bottom: 10vw;  
+       
+        
         a {
             color:#232323;
             text-wrap: nowrap;
             padding: 3vw 5vw;
+            margin:  3vw 23% 5vw 23%;
             background: transparent;
             text-align: center;
             border-radius: 10px;
             border: 2px solid #232323;
             font-size: 1.3rem;
             font-weight: 400;
+           
         }
 
     }
-
-    .titulo-encabezado {
-        display: block;
-        align-items: center;
-        justify-content: right;
-        text-wrap: nowrap;
-        gap: 18vw;
-
-        a {
-            display: none;
-        }
-    }
-
-   
-}
-
-
-.reseñas ul li {
-    width: 90vw;
-    height: auto;
-    border: 1px solid #c7c5c5;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px 2px #80808087;
-    background: #f9f7f7fe;
-    padding: 4vw;
-    position: relative;
-    margin-bottom: 25px;
-
-       
-
-    .perfil {
-        width: 9vw;
-        height: 9vw;
-    }
-
-    .estrellas {
-    position: absolute;  
-    width: 23vw;
-    height: 5vw;
-    margin-left: 11vw;
-    margin-top: -5px;
-   }
-
-   p {
-    font-size: 1.3rem;
-    margin: 30px 0;
-    text-align: left;
-   }
-
-    
-}   
 
   
-.reseñas .encabezado {
    
-    display: flex;
-    gap: 10px;
-   
-    h4 {
-        font-size: 1.4rem;
-    }
-
-    img {
-        width: 7vw;
-        height: 7vw;
-    }
-
-          
 }
 
 
-    .formulario {
+
+
+ 
+.formulario {
         
         display: block;
         height: auto;
@@ -836,13 +699,13 @@ footer {
         width: 90%;
        
         
-    }
+}
 
-    form {
+form {
         width: 90%;
         margin: 45px auto;
         padding: 0;
-    }
+}
 
     form input, form button {
         width: 100%;
@@ -883,7 +746,7 @@ footer {
 
   .galeria {
   width: 100%;
-  height: 75vh;
+  height: 77vh;
   overflow: hidden;
   position: relative;
   background: transparent;
@@ -894,6 +757,7 @@ footer {
 
     .galeria ul {
     width: 100%;
+    height: auto;
     display: flex;
     gap: 4vw;
     list-style: none;
@@ -912,7 +776,7 @@ footer {
 
     .galeria img {
     height: 380px;
-    width: 350px;
+    width: 340px;
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
