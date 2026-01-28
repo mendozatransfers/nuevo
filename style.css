@@ -570,7 +570,7 @@ footer {
     /*banner*/
 
     .hero {
-    background-image: url(imagenes/banner-movil1.webp);
+    background-image: url(imagenes/banner-movil2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -583,7 +583,7 @@ footer {
     .info {
         width: 100%;
         height: 100svh;
-        background: #000000af;
+        background: #000000c4;
         margin: 0;
         padding: 0;
     }
